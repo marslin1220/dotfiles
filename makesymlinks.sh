@@ -63,3 +63,12 @@ fi
 }
 
 install_zsh
+
+install_vim_bundles () {
+    cd $dir/vim
+    git submodule init
+    git submodule update
+    git submodule foreach git pull origin master
+}
+
+install_vim_bundles
