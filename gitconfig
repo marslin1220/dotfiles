@@ -1,0 +1,38 @@
+# This is Git's per-user configuration file.
+[user]
+    name = Cheng Lung Lin
+    email = marslin@gmail.com
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    up = fetch
+    di = diff
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    spush = svn dcommit
+    spull = svn rebase
+    slog = svn log
+    sinfo = svn info
+    ff = flow feature
+[branch]
+        autosetuprebase = always
+[color]
+    ui = always
+[push]
+    default = matching
+[core]
+    autocrlf = false
+    safecrlf = true
+	excludesfile = /Users/marslin/.gitignore_global
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path =
+[mergetool "sourcetree"]
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
+[pager]
+    diff = diff-so-fancy | less --tabs=4 -RFX
+    show = diff-so-fancy | less --tabs=4 -RFX
