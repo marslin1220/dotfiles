@@ -46,10 +46,10 @@ set mouse=a
 filetype on
 syntax on
 
-colorscheme dracula
+colorscheme Dusk
 hi Normal ctermfg=NONE
 
-au Syntax * colorscheme dracula
+au Syntax * colorscheme Dusk
 au BufNewFile,BufRead *.phtml,*.inc set syntax=php
 
 "vim tab快速鍵
