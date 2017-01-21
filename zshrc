@@ -83,15 +83,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-alias ls        ls-F -A
-alias ll        ls-F -lhA
-alias cp        cp -i
-alias rm        rm -i
-alias mv        mv -i
-alias df        df -h
-alias du        du -h
-alias grep      grep --color=always
-alias less      less -r
-alias vi        vim -p
-alias vim       vim -p
