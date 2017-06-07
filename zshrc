@@ -84,7 +84,20 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
 # Path for fastlane
 export PATH="$HOME/.fastlane/bin:$PATH"
+
+# Path for RBENV 
+#if which rbenv > /dev/null; then
+  eval "$(rbenv init -)";
+#fi
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+# for Android
+export ANDROID_HOME=${HOME}/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+
+# for Cocoapods
+export GEM_HOME=$HOME/.gem
+export PATH=$GEM_HOME/bin:$PATH
