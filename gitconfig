@@ -17,6 +17,7 @@
     slog = svn log
     sinfo = svn info
     ff = flow feature
+    cf = clang-format
 [branch]
         autosetuprebase = always
 [color]
