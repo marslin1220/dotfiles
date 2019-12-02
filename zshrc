@@ -84,20 +84,33 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias cfif="clang-format -i -style=file"
+
+# BFG Repo-Cleaner
+# https://rtyley.github.io/bfg-repo-cleaner/
+alias bfg="java -jar ${HOME}/jar/bfg-1.13.0.jar"
+
 # Path for fastlane
 export PATH="$HOME/.fastlane/bin:$PATH"
 
 # Path for RBENV 
 #if which rbenv > /dev/null; then
-  eval "$(rbenv init -)";
+#  eval "$(rbenv init -)";
 #fi
-export PATH="$HOME/.rbenv/bin:$PATH"
+#export PATH="$HOME/.rbenv/bin:$PATH"
 
 # for Android
 export ANDROID_HOME=${HOME}/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+export PATH=${PATH}:${ANDROID_HOME}/build-tools/26.0.2
 
 # for Cocoapods
 export GEM_HOME=$HOME/.gem
 export PATH=$GEM_HOME/bin:$PATH
+
+# for OpenSSL
+export PATH=$PATH:/usr/local/opt/openssl/include/openssl
+
+# for GO language
+export GOPATH=$HOME/workspace/go

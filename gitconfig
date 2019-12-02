@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
-    name = Cheng Lung Lin
-    email = marslin@gmail.com
+	name = Cheng Lung Lin
+	email = marslin@gmail.com
 [alias]
     co = checkout
     br = branch
@@ -37,3 +37,10 @@
 [pager]
     diff = diff-so-fancy | less --tabs=4 -RFX
     show = diff-so-fancy | less --tabs=4 -RFX
+[commit]
+	template = /Users/marslin/.stCommitMsg
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
