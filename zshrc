@@ -83,6 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 
 # Path for fastlane
 export PATH="$HOME/.fastlane/bin:$PATH"
@@ -101,3 +102,6 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 # for Cocoapods
 export GEM_HOME=$HOME/.gem
 export PATH=$GEM_HOME/bin:$PATH
+
+# for arcanist
+export PATH=%${PATH}:$HOME/arcanist/arcanist/bin/
